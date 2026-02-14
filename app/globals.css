@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تنسيق اضطراري لضمان ظهور العناصر */
+body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-family: ui-monospace, monospace;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.bg-zinc-950 {
+  background-color: #09090b !important;
+}
+
+.text-purple-600 {
+  color: #9333ea !important;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem !important;
+}
