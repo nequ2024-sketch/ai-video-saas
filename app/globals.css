@@ -1,27 +1,19 @@
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* تنسيق اضطراري لضمان ظهور العناصر */
-body {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  font-family: ui-monospace, monospace;
+@theme {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.grid {
-  display: grid !important;
+/* بروتوكول التصحيح الإجباري لضمان السيادة البصرية */
+@layer base {
+  body {
+    @apply bg-black text-white antialiased overflow-x-hidden;
+    background-color: #000000 !important; /* لضمان السواد المطلق */
+    color: #ffffff !important;
+  }
 }
 
-.bg-zinc-950 {
-  background-color: #09090b !important;
-}
-
-.text-purple-600 {
-  color: #9333ea !important;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem !important;
+@layer components {
+  .grid { display: grid !important; }
+  .flex { display: flex !important; }
 }
