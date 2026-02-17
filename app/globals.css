@@ -1,19 +1,32 @@
-@import "tailwindcss";
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
 }
 
-/* بروتوكول التصحيح الإجباري لضمان السيادة البصرية */
-@layer base {
-  body {
-    @apply bg-black text-white antialiased overflow-x-hidden;
-    background-color: #000000 !important; /* لضمان السواد المطلق */
-    color: #ffffff !important;
-  }
+body {
+  background-color: #020202;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-@layer components {
-  .grid { display: grid !important; }
-  .flex { display: flex !important; }
+/* تحسين شكل الأزرار والمربعات بشكل تلقائي */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
