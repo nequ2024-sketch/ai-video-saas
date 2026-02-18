@@ -2,35 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-    --primary: 262.1 83.3% 57.8%; /* لون أرجواني بروتوكول نكسوس */
-    --card: 0 0% 100%;
-    --border: 220 13% 91%;
-  }
-
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --primary: 263.4 70% 50.4%;
-    --card: 224 71.4% 4.1%;
-    --border: 217.2 32.6% 17.5%;
-  }
+:root {
+  --background: 0 0% 100%;
+  --foreground: 224 71.4% 4.1%;
+  --primary: 262.1 83.3% 57.8%;
+  --border: 220 13% 91%;
 }
 
-@layer components {
-  .glass-card {
-    @apply bg-background/60 backdrop-blur-md border border-border rounded-xl transition-all duration-300;
-  }
-  
-  .cyber-button {
-    @apply bg-primary text-white font-bold py-2 px-6 rounded-lg shadow-[0_0_15px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95 transition-all;
-  }
+.dark {
+  --background: 224 71.4% 4.1%;
+  --foreground: 210 20% 98%;
+  --primary: 263.4 70% 50.4%;
+  --border: 217.2 32.6% 17.5%;
 }
 
 body {
-  @apply bg-background text-foreground antialiased;
-  background-image: radial-gradient(circle at center, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
