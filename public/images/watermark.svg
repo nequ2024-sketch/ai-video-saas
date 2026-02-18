@@ -1,0 +1,12 @@
+<svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="white" fill-opacity="0.25">
+    NEXAVISION AI
+  </text>
+  <rect x="5" y="45" width="200" height="2" fill="url(#nexa_grad)" fill-opacity="0.2"/>
+  <defs>
+    <linearGradient id="nexa_grad" x1="0" y1="0" x2="250" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+</svg>

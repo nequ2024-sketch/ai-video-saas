@@ -1,0 +1,8 @@
+﻿User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /api
+
+Sitemap: https://nexavision.ai/sitemap.xml

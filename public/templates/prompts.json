@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "name": "Cinematic",
+      "items": [
+        {
+          "title": "Cyberpunk Rain",
+          "prompt": "Cyberpunk city street at night, neon signs reflecting in puddles, cinematic lighting, 8k, highly detailed, rainy weather.",
+          "image": "/images/previews/cyber.jpg"
+        },
+        {
+          "title": "Desert Sunset",
+          "prompt": "Drone shot of vast sand dunes at sunset, golden hour, realistic textures, wind blowing sand particles.",
+          "image": "/images/previews/desert.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Avatar Styles",
+      "items": [
+        {
+          "title": "Professional News",
+          "prompt": "News anchor style, formal studio background, realistic lighting.",
+          "voice": "eleven_josh_id"
+        }
+      ]
+    }
+  ]
+}
