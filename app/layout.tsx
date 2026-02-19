@@ -1,12 +1,7 @@
-import { Cairo } from "next/font/google";
-import "./globals.css";
+import { Cairo } from 'next/font/google';
+import './globals.css';
 
-const cairo = Cairo({ subsets: ["arabic", "latin"] });
-
-export const metadata = {
-  title: "???? ???? | NexaVision AI",
-  description: "?????? ????? ??????? ??????? ?????????",
-};
+const cairo = Cairo({ subsets: ['arabic', 'latin'] });
 
 export default function RootLayout({ children }) {
   return (
