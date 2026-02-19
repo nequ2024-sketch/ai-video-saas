@@ -27,11 +27,11 @@ export default function CreditCounter() {
       payload => setCredits(payload.new.credits))
       .subscribe();
 
-    const handleCheckout = async () => { setLoading(true); const res = await fetch("/api/checkout", { method: "POST" }); const data = await res.json(); if (data.url) window.location.href = data.url; setLoading(false); }; 
+    const handleCheckout = async () => { setLoading(true); const res = // await fetch("/api/checkout", { method: "POST" }); const data = await res.json(); if (data.url) window.location.href = data.url; setLoading(false); }; 
  return () => { supabase.removeChannel(channel); };
   }, []);
 
-  const handleCheckout = async () => { setLoading(true); const res = await fetch("/api/checkout", { method: "POST" }); const data = await res.json(); if (data.url) window.location.href = data.url; setLoading(false); }; 
+  const handleCheckout = async () => { setLoading(true); const res = // await fetch("/api/checkout", { method: "POST" }); const data = await res.json(); if (data.url) window.location.href = data.url; setLoading(false); }; 
  return (
     <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-2 rounded-2xl backdrop-blur-md">
       <div className="flex items-center gap-2">
