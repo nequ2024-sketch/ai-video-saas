@@ -10,3 +10,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+// Forced Update for Arabic Fonts 2026
